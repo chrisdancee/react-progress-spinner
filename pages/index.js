@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Spinner from "src";
+import { Button, Card, Container } from "./components";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,16 +18,29 @@ const Home = () => {
 
   return (
     <>
-      <Spinner percentage={currentProgress} />
-      <button onClick={() => setIsLoading(!isLoading)}>Start/Stop</button>
+      <Container>
+        <Card>
+          <Spinner percentage={currentProgress} radius={120} thickness={15} />
+          <Button onClick={() => setIsLoading(!isLoading)}>Start/Stop</Button>
+        </Card>
+      </Container>
 
       {/*
        * Global styles hooking into the Spinner component classNames
        * to allow custom styling
        */}
       <style jsx global>{`
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
         .react-progress-spinner-container {
           font-family: "Roboto", sans-serif;
+        }
+
+        .react-progress-spinner-progress {
+          stroke: #409fff; // Overwrites default color
         }
       `}</style>
     </>

@@ -1,6 +1,6 @@
 import styles from "./Spinner.module.css";
 
-const Spinner = ({ percentage = 0, radius = 100, thickness = 8 }) => {
+const Spinner = ({ percentage = 0, radius = 200, thickness = 12 }) => {
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - circumference / (100 / percentage);
   const padding = thickness / 2;
@@ -13,19 +13,19 @@ const Spinner = ({ percentage = 0, radius = 100, thickness = 8 }) => {
       }}
     >
       <svg
-        className={styles.spinner}
+        className={`${styles.spinner} react-progress-spinner-spinner`}
         height={(radius + padding) * 2}
         viewBox={`0 0 ${(radius + padding) * 2} ${(radius + padding) * 2}`}
         width={(radius + padding) * 2}
       >
         <circle
-          className={styles.track}
+          className={`${styles.track} react-progress-spinner-spinner`}
           r={radius + padding}
           cx={radius + padding}
           cy={radius + padding}
         />
         <circle
-          className={styles.progress}
+          className={`${styles.progress} react-progress-spinner-progress`}
           r={radius}
           cx={radius + padding}
           cy={radius + padding}
@@ -36,15 +36,19 @@ const Spinner = ({ percentage = 0, radius = 100, thickness = 8 }) => {
           }}
         />
         <circle
-          className={styles.inset}
+          className={`${styles.inset} react-progress-spinner-inset`}
           r={radius - padding}
           cx={radius + padding}
           cy={radius + padding}
         />
       </svg>
-      <p className={styles.value}>
+      <p className={`${styles.value} react-progress-spinner-value`}>
         {percentage}
-        <span className={styles.percentage}>%</span>
+        <span
+          className={`${styles.percentage} react-progress-spinner-percentage`}
+        >
+          %
+        </span>
       </p>
     </div>
   );
