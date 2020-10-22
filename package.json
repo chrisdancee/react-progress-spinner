@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "webpack",
-    "start": "next start"
+    "start": "next start",
+    "build-demo": "next build",
+    "start-demo": "next start"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
