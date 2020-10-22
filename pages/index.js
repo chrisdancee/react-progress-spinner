@@ -21,7 +21,12 @@ const Home = () => {
       <Container>
         <Card>
           <Spinner percentage={currentProgress} radius={120} thickness={15} />
-          <Button onClick={() => setIsLoading(!isLoading)}>Start/Stop</Button>
+          <Button
+            className={isLoading ? "selected" : ""}
+            onClick={() => setIsLoading(!isLoading)}
+          >
+            {isLoading ? "Stop" : "Start"}
+          </Button>
         </Card>
       </Container>
 
