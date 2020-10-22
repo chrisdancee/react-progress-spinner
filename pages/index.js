@@ -32,12 +32,21 @@ const Home = () => {
           <h1>React Progress Spinner</h1>
           <ul>
             <li>
-              ⚡️ Quick and easy to install - Import the component, add your
-              progress as a percentage prop and you're set
+              <span>⚡️ Quick and easy to install</span>
+              <p className="description">
+                Import the component, add your progress as a percentage prop and
+                you're set
+              </p>
             </li>
             <li>
-              ⚙️ Fully customisable - Hook into the styles in order to change
-              any style value
+              <span>⚙️ Fully customisable</span>
+              <p className="description">
+                Hook into the styles in order to change any style value
+              </p>
+            </li>
+            <li>
+              <span>🏋️‍♀️ Dependency free and lightweight</span>
+              <p className="description">Bundle size is just 8KB</p>
             </li>
           </ul>
         </Content>
@@ -48,6 +57,15 @@ const Home = () => {
        * to allow custom styling
        */}
       <style jsx global>{`
+        .react-progress-spinner-container {
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+        }
+
+        .react-progress-spinner-progress {
+          stroke: #409fff; // Overwrites default color
+        }
+
         body {
           margin: 0;
           padding: 0;
@@ -55,11 +73,19 @@ const Home = () => {
 
         h1 {
           font-family: "Times New Roman", Times, serif;
-          font-weight: 900;
+        }
+
+        span {
+          font-weight: 500;
+        }
+
+        .description {
+          margin-top: 5px;
         }
 
         ul {
           font-family: "Roboto", sans-serif;
+          font-weight: 300;
           list-style: none;
           margin: 0;
           padding: 0;
@@ -67,14 +93,6 @@ const Home = () => {
 
         li {
           padding-bottom: 15px;
-        }
-
-        .react-progress-spinner-container {
-          font-family: "Roboto", sans-serif;
-        }
-
-        .react-progress-spinner-progress {
-          stroke: #409fff; // Overwrites default color
         }
       `}</style>
     </>
