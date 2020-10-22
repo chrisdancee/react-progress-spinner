@@ -1,30 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React-progress-spinner
 
-## Getting Started
+> Animated React Progress Spinner component for download/upload animations
 
-First, run the development server:
+A React component that provides a customisable Progressive Web App (PWA) prompt telling the user to 'Add to Home Screen'. The prompt behaviour is baked in to Android devices, yet iOS is still lagging behind. This component aims to provide a simple way to provide this functionality on iOS for websites that are PWA-ready. The prompt styles closely match iOS designs for both light and dark UI modes to appear native to the user.
 
-```bash
-npm run dev
-# or
-yarn dev
+<hr>
+
+<img src="https://user-images.githubusercontent.com/11626619/96931140-1fcf8400-14bd-11eb-845e-f20d0d095533.gif" width="100%">
+
+<hr>
+
+## Features
+
+- ⚡️ Quick and easy to install - Import the component, add your progress as a percentage prop and you're set
+- ⚙️ Fully customisable: Hook into the styles in order to change any style value
+- 🏋️‍♀️ Dependency free and lightweight Bundle size is just 8KB
+
+## Usage
+
+1. Add `react-progress-spinner` as a dependency using `yarn add react-progress-spinner`. // Not yet on NPM
+
+2. Import into your project:
+
+```
+import ProgressSpinner from 'react-progress-spinner'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Render the component:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+<ProgressSpinner percentage={50} />
+```
 
-## Learn More
+4. Add props to configure:
 
-To learn more about Next.js, take a look at the following resources:
+- `percentage`: pass an integer from 1-100 to signify the current progress percentage
+- `radius`: pass an integer to change the size of the progress spinner
+- `thickness`: pass an integer to define the thickness of the progress bar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+<ProgressSpinner percentage={currentProgress} radius={120} thickness={15} />
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+1. Run `yarn install` to install required dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Run `yarn dev` to start the development environment. This will run on localhost:3000
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Run `yarn build` to build the new version of the component
