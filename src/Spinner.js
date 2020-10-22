@@ -1,13 +1,13 @@
 import styles from "./Spinner.module.css";
 
-const Spinner = ({ percentage = 0, radius = 100, thickness = 5 }) => {
+const Spinner = ({ percentage = 0, radius = 100, thickness = 8 }) => {
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - circumference / (100 / percentage);
   const padding = thickness / 2;
 
   return (
     <div
-      className={styles.container}
+      className={`${styles.container} react-progress-spinner-container`}
       style={{
         fontSize: `${radius}px`,
       }}

@@ -19,6 +19,16 @@ const Home = () => {
     <>
       <Spinner percentage={currentProgress} />
       <button onClick={() => setIsLoading(!isLoading)}>Start/Stop</button>
+
+      {/*
+       * Global styles hooking into the Spinner component classNames
+       * to allow custom styling
+       */}
+      <style jsx global>{`
+        .react-progress-spinner-container {
+          font-family: "Roboto", sans-serif;
+        }
+      `}</style>
     </>
   );
 };
