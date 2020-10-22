@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 import Spinner from "src";
 import { Button, Card, Container, Content } from "./components";
@@ -18,6 +19,12 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>
+          React-progress-spinner | Does exactly what it says on the tin
+        </title>
+      </Head>
+
       <Container>
         <Card>
           <Spinner percentage={currentProgress} radius={120} thickness={15} />

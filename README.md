@@ -2,6 +2,8 @@
 
 > Animated React Progress Spinner component for download/upload animations
 
+**Demo:** https://react-progress-spinner.vercel.app/
+
 A React component that provides a customisable Progressive Web App (PWA) prompt telling the user to 'Add to Home Screen'. The prompt behaviour is baked in to Android devices, yet iOS is still lagging behind. This component aims to provide a simple way to provide this functionality on iOS for websites that are PWA-ready. The prompt styles closely match iOS designs for both light and dark UI modes to appear native to the user.
 
 <hr>
