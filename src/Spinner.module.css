@@ -19,11 +19,11 @@
 }
 
 .track {
-  fill: grey;
+  fill: #e8ebee;
 }
 
 .percentage {
-  color: grey;
+  color: #cbcbcb;
   font-size: 40px;
   vertical-align: super;
 }
@@ -32,7 +32,7 @@
   animation: rotate 12s linear infinite;
   fill: transparent;
   stroke-linecap: round;
-  stroke: blue;
+  stroke: #409fff;
   transform-origin: 50% 50%;
 }
 
