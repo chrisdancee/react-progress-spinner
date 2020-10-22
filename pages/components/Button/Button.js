@@ -7,7 +7,7 @@ const Button = ({ children, className, ...props }) => (
     <style jsx>{`
       .button {
         background: #409fff;
-        border-radius: 1.25em;
+        border-radius: 1.5em;
         border: 0;
         box-sizing: border-box;
         color: #fff;
@@ -17,7 +17,7 @@ const Button = ({ children, className, ...props }) => (
           Segoe UI, Helvetica Neue, Lucida Grande, sans-serif;
         font-size: 1em;
         font-weight: 500;
-        height: 2.5em;
+        height: 3em;
         margin-top: 40px;
         outline: 0;
         transition: background-color 0.2s cubic-bezier(0.77, 0, 0.175, 1),

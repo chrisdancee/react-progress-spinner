@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Spinner from "src";
-import { Button, Card, Container } from "./components";
+import { Button, Card, Container, Content } from "./components";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +28,19 @@ const Home = () => {
             {isLoading ? "Stop" : "Start"}
           </Button>
         </Card>
+        <Content>
+          <h1>React Progress Spinner</h1>
+          <ul>
+            <li>
+              ⚡️ Quick and easy to install - Import the component, add your
+              progress as a percentage prop and you're set
+            </li>
+            <li>
+              ⚙️ Fully customisable - Hook into the styles in order to change
+              any style value
+            </li>
+          </ul>
+        </Content>
       </Container>
 
       {/*
@@ -38,6 +51,22 @@ const Home = () => {
         body {
           margin: 0;
           padding: 0;
+        }
+
+        h1 {
+          font-family: "Times New Roman", Times, serif;
+          font-weight: 900;
+        }
+
+        ul {
+          font-family: "Roboto", sans-serif;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        li {
+          padding-bottom: 15px;
         }
 
         .react-progress-spinner-container {
