@@ -1,3 +1,11 @@
+.inset {
+  fill: white;
+}
+
+.track {
+  fill: grey;
+}
+
 .progress {
   fill: transparent;
   stroke-linecap: round;

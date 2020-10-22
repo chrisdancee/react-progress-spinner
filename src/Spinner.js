@@ -13,6 +13,12 @@ const Spinner = ({ percentage = 75, radius = 200, thickness = 20 }) => {
       width={(radius + padding) * 2}
     >
       <circle
+        className={styles.track}
+        r={radius + padding}
+        cx={radius + padding}
+        cy={radius + padding}
+      />
+      <circle
         className={styles.progress}
         r={radius}
         cx={radius + padding}
@@ -22,7 +28,13 @@ const Spinner = ({ percentage = 75, radius = 200, thickness = 20 }) => {
           strokeDashoffset: offset,
           strokeWidth: thickness,
         }}
-      ></circle>
+      />
+      <circle
+        className={styles.inset}
+        r={radius - padding}
+        cx={radius + padding}
+        cy={radius + padding}
+      />
     </svg>
   );
 };
