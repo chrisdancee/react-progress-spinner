@@ -7,6 +7,13 @@
   }
 }
 
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
 .inset {
   fill: white;
 }
@@ -15,10 +22,21 @@
   fill: grey;
 }
 
+.percentage {
+  color: grey;
+  font-size: 40px;
+  vertical-align: super;
+}
+
 .progress {
   animation: rotate 12s linear infinite;
   fill: transparent;
   stroke-linecap: round;
   stroke: blue;
   transform-origin: 50% 50%;
+}
+
+.value {
+  font-size: 80px;
+  position: absolute;
 }
