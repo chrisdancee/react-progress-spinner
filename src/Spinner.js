@@ -1,12 +1,17 @@
 import styles from "./Spinner.module.css";
 
-const Spinner = ({ percentage = 0, radius = 200, thickness = 20 }) => {
+const Spinner = ({ percentage = 0, radius = 100, thickness = 5 }) => {
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - circumference / (100 / percentage);
   const padding = thickness / 2;
 
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        fontSize: `${radius}px`,
+      }}
+    >
       <svg
         className={styles.spinner}
         height={(radius + padding) * 2}
