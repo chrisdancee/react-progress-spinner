@@ -1,3 +1,5 @@
-.spinner {
-  background-color: red;
+.progress {
+  fill: transparent;
+  stroke-linecap: round;
+  stroke: blue;
 }
