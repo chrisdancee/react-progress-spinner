@@ -8,6 +8,7 @@ const Container = ({ children }) => (
         background-color: #eddaea;
         color: #161616;
         display: flex;
+        flex-flow: row wrap;
         height: 100vh;
         justify-content: center;
         width: 100vw;
