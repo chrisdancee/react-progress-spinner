@@ -11,12 +11,17 @@ const Spinner = ({ percentage = 0, radius = 200, thickness = 12 }) => {
       style={{
         fontSize: `${radius}px`,
       }}
+      role="progressbar"
+      aria-busy={percentage < 100}
+      aria-live="assertive"
+      aria-valuenow={percentage}
     >
       <svg
         className={`${styles.spinner} react-progress-spinner-spinner`}
         height={(radius + padding) * 2}
         viewBox={`0 0 ${(radius + padding) * 2} ${(radius + padding) * 2}`}
         width={(radius + padding) * 2}
+        aria-hidden="true"
       >
         <circle
           className={`${styles.track} react-progress-spinner-spinner`}
@@ -42,7 +47,7 @@ const Spinner = ({ percentage = 0, radius = 200, thickness = 12 }) => {
           cy={radius + padding}
         />
       </svg>
-      <p className={`${styles.value} react-progress-spinner-value`}>
+      <p className={`${styles.value} react-progress-spinner-value`} aria-hidden="true">
         {percentage}
         <span
           className={`${styles.percentage} react-progress-spinner-percentage`}

@@ -1,6 +1,6 @@
-const Container = ({ children }) => (
+const Main = ({ children }) => (
   <>
-    <div className="container">{children}</div>
+    <main className="container">{children}</main>
 
     <style jsx>{`
       .container {
@@ -17,4 +17,4 @@ const Container = ({ children }) => (
   </>
 );
 
-export default Container;
+export default Main;

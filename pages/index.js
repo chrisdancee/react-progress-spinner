@@ -31,6 +31,7 @@ const Home = () => {
           <Button
             className={isLoading ? "selected" : ""}
             onClick={() => setIsLoading(!isLoading)}
+            aria-pressed={isLoading}
           >
             {isLoading ? "Stop" : "Start"}
           </Button>
