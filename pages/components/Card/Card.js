@@ -12,8 +12,9 @@ const Card = ({ children }) => (
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        width: fit-content;
+        margin: 20px 0;
         padding: 30px;
+        width: fit-content;
       }
     `}</style>
   </>

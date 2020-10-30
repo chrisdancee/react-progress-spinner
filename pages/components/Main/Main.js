@@ -9,7 +9,8 @@ const Main = ({ children }) => (
         color: #161616;
         display: flex;
         flex-flow: row wrap;
-        height: 100vh;
+        height: 100%;
+        min-height: 100vh;
         justify-content: center;
         width: 100vw;
       }
