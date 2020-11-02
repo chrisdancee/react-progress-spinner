@@ -15,6 +15,7 @@ const Spinner = ({ percentage = 0, radius = 200, thickness = 12 }) => {
       aria-busy={percentage < 100}
       aria-live="assertive"
       aria-valuenow={percentage}
+      data-testid="spinner"
     >
       <svg
         className={`${styles.spinner} react-progress-spinner-spinner`}
@@ -47,8 +48,11 @@ const Spinner = ({ percentage = 0, radius = 200, thickness = 12 }) => {
           cy={radius + padding}
         />
       </svg>
-      <p className={`${styles.value} react-progress-spinner-value`} aria-hidden="true">
-        {percentage}
+      <p
+        className={`${styles.value} react-progress-spinner-value`}
+        aria-hidden="true"
+      >
+        <span data-testid="spinner-value">{percentage}</span>
         <span
           className={`${styles.percentage} react-progress-spinner-percentage`}
         >

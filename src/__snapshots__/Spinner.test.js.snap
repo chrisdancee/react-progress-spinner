@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  aria-busy={true}
+  aria-live="assertive"
+  aria-valuenow={33}
+  className="undefined react-progress-spinner-container"
+  data-testid="spinner"
+  role="progressbar"
+  style={
+    Object {
+      "fontSize": "200px",
+    }
+  }
+>
+  <svg
+    aria-hidden="true"
+    className="undefined react-progress-spinner-spinner"
+    height={412}
+    viewBox="0 0 412 412"
+    width={412}
+  >
+    <circle
+      className="undefined react-progress-spinner-spinner"
+      cx={206}
+      cy={206}
+      r={206}
+    />
+    <circle
+      className="undefined react-progress-spinner-progress"
+      cx={206}
+      cy={206}
+      r={200}
+      style={
+        Object {
+          "strokeDasharray": 1256.6370614359173,
+          "strokeDashoffset": 841.9468311620647,
+          "strokeWidth": 12,
+        }
+      }
+    />
+    <circle
+      className="undefined react-progress-spinner-inset"
+      cx={206}
+      cy={206}
+      r={194}
+    />
+  </svg>
+  <p
+    aria-hidden="true"
+    className="undefined react-progress-spinner-value"
+  >
+    <span
+      data-testid="spinner-value"
+    >
+      33
+    </span>
+    <span
+      className="undefined react-progress-spinner-percentage"
+    >
+      %
+    </span>
+  </p>
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  aria-busy={true}
+  aria-live="assertive"
+  aria-valuenow={50}
+  className="undefined react-progress-spinner-container"
+  data-testid="spinner"
+  role="progressbar"
+  style={
+    Object {
+      "fontSize": "150px",
+    }
+  }
+>
+  <svg
+    aria-hidden="true"
+    className="undefined react-progress-spinner-spinner"
+    height={308}
+    viewBox="0 0 308 308"
+    width={308}
+  >
+    <circle
+      className="undefined react-progress-spinner-spinner"
+      cx={154}
+      cy={154}
+      r={154}
+    />
+    <circle
+      className="undefined react-progress-spinner-progress"
+      cx={154}
+      cy={154}
+      r={150}
+      style={
+        Object {
+          "strokeDasharray": 942.4777960769379,
+          "strokeDashoffset": 471.23889803846896,
+          "strokeWidth": 8,
+        }
+      }
+    />
+    <circle
+      className="undefined react-progress-spinner-inset"
+      cx={154}
+      cy={154}
+      r={146}
+    />
+  </svg>
+  <p
+    aria-hidden="true"
+    className="undefined react-progress-spinner-value"
+  >
+    <span
+      data-testid="spinner-value"
+    >
+      50
+    </span>
+    <span
+      className="undefined react-progress-spinner-percentage"
+    >
+      %
+    </span>
+  </p>
+</div>
+`;
+
+exports[`renders correctly 3`] = `
+<div
+  aria-busy={true}
+  aria-live="assertive"
+  aria-valuenow={75}
+  className="undefined react-progress-spinner-container"
+  data-testid="spinner"
+  role="progressbar"
+  style={
+    Object {
+      "fontSize": "130px",
+    }
+  }
+>
+  <svg
+    aria-hidden="true"
+    className="undefined react-progress-spinner-spinner"
+    height={266}
+    viewBox="0 0 266 266"
+    width={266}
+  >
+    <circle
+      className="undefined react-progress-spinner-spinner"
+      cx={133}
+      cy={133}
+      r={133}
+    />
+    <circle
+      className="undefined react-progress-spinner-progress"
+      cx={133}
+      cy={133}
+      r={130}
+      style={
+        Object {
+          "strokeDasharray": 816.8140899333462,
+          "strokeDashoffset": 204.20352248333654,
+          "strokeWidth": 6,
+        }
+      }
+    />
+    <circle
+      className="undefined react-progress-spinner-inset"
+      cx={133}
+      cy={133}
+      r={127}
+    />
+  </svg>
+  <p
+    aria-hidden="true"
+    className="undefined react-progress-spinner-value"
+  >
+    <span
+      data-testid="spinner-value"
+    >
+      75
+    </span>
+    <span
+      className="undefined react-progress-spinner-percentage"
+    >
+      %
+    </span>
+  </p>
+</div>
+`;
